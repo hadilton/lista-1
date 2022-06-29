@@ -1,0 +1,285 @@
+Exercicio 1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ex1 Entrar via teclado  com base e alturade um retângulo,calculare exibir sua área.
+            //Declarando as váriaveis b(base),h(altura)e a(área).
+
+            Double b, h, a;
+            Console.WriteLine("Digite a base do retangulo");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a altura do retângulo");
+            h = Convert.ToDouble(Console.ReadLine());
+            a = b * h;
+            Console.WriteLine("A área do retângulo é:"+ a);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+Exercicio 2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {    //Ex.2  Calcular e exibir a área de um quadrado apartir do valor de sua aresta que será digitado.        
+            //Declaração de variáveis.
+            double lado, area, aresta;
+            Console.WriteLine("Digite um lado do quadrado");
+            lado = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a aresta");
+            aresta = Convert.ToDouble(Console.ReadLine());           
+            
+            area = lado * 4 * aresta * 4;
+
+            Console.WriteLine("A área do quadrado é:" + area);
+            Console.ReadKey();
+        
+        }
+    }
+}
+
+Exercicio 3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ex.3  Calcular e exibir a área de um quadrado apartir do valor de sua diagonal que será digitado.
+            //Para achar a area  A diagonal(d) eleva ao quadrado dividido por 2.
+
+            double lado, area, diagonal;
+            Console.WriteLine("Digite o lado do quadrado");
+            lado = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o valor da diagonal");
+            diagonal = Convert.ToDouble(Console.ReadLine());
+            area = lado * 4 * diagonal * 2 / 2;
+            Console.WriteLine(" A area do quadrado é " + area);
+            Console.ReadKey();
+        }
+    }
+}
+
+Exercicio 4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ex.4  Apartir dos valores da base e altura de um triângulo, calcular e exibir sua área.
+            
+            //Declarando as Variáveis.
+            double comprimento, altura, area;
+            Console.WriteLine(" Digite o comprimento do triângulo");
+            comprimento = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(" Digite o valor da altura do triângulo");
+            altura = Convert.ToDouble(Console.ReadLine());
+            // Obs: A área do triângulo é base (b) ou comprimento vezes a altura (h) dividido por 2.
+            area = comprimento * altura / 2;
+            Console.WriteLine(" A área do triângulo é: " + area );
+            Console.ReadKey();
+        }
+    }
+}
+
+
+Exercicio 5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //calcular e exibir a média aritimética de quatro valores quaisquer que serão digitados.
+            //Declarão de variáveis.
+            double nota1, nota2, nota3, nota4, media;
+            Console.WriteLine("Digite a nota 1");
+            nota1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a nota 2");
+            nota2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a nota 3");
+            nota3 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a nota 4");
+            nota4 = Convert.ToDouble(Console.ReadLine());
+            //Para calcular a média aritmética soma-se as 4 notas e dividide pela quantidade de notas. 
+            media = (nota1 + nota2 + nota3 + nota4) / 4 ;
+            Console.WriteLine("A sua Média é ;" + media);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+Exercicio 6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //EX.6  Calcular e exibir a média geométrica de dois valores quaisquer que serão digitados.
+            // Declaração de variáveis.
+            
+
+            double valor1, valor2, media;
+            Console.WriteLine("Digite o valor 1");
+            valor1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o valor 2");
+            valor2 = Convert.ToDouble(Console.ReadLine());          
+            media = valor1 * valor2;
+            Console.WriteLine(" A média geométrica é;" + media);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+ Exercicio 7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ex.7 Calcular e exibir a tensão de um determinado circuito eletrônico apartir dos valores da resistência 
+            //e corrente elétrica que serão digitados, utilize a lei de Ohm.                       
+            Double corrente, resistencia, tensao;
+            Console.WriteLine("Digite o valor da corrente");
+            corrente = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(" Digite o valor da resistência");
+            resistencia = Convert.ToDouble(Console.ReadLine());
+            //Existe mais duas formula na lei de Ohm totalizando três fórmulas.
+            //conforme a lei de Ohm a formula é V(tensão) é igual a I(corrente) vezes R(resistência).
+            tensao = corrente * resistencia;
+            Console.WriteLine("A tensão do equipamento é;" + tensao);
+            Console.ReadKey();
+        }
+    }
+}
+ exercicio 8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ex.8 Entrar via teclado com o valor de uma temperatura em graus Celsus, calcular e exibir sua temperatura 
+            //equivalente em graus Fahrenheit.
+            //Declaração de variáveis.
+            
+            Double celsus, fahrenheit;
+            Console.WriteLine("Digite o valor da temperatura;");
+            celsus = Convert.ToDouble(Console.ReadLine());
+            //Para se converter a temperatura em graus Celsus para Fahrenheit temos que utilizar uma fórmula: 
+            //c(Celsus) dividido por 5 igual a F (Fahrenheit) menos 32 dividido por 9.
+            fahrenheit = ((celsus) /(5) * (9) + (32)) ;
+            Console.WriteLine(" A temperatura em Fahrenheit é; "  +  fahrenheit);
+            Console.ReadKey();
+
+Exercicio 9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ex.9 Apartir do diametro de um círculo que será digitado, calcular e exibir sua área.
+            //Declaração de variaveis.
+            Double raio = 0;
+            Double diametro = 0;
+            Double area = 0;
+            Console.WriteLine("Digite o valor do raio:");
+            //Foi utilizado o Double.Parse porque quando for pegar um caractere tipo String ele converte para Double.
+            raio = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o diâmetro do circulo:");
+            diametro = Double.Parse(Console.ReadLine());
+            //Para calcular a área é necessário utilizar essa fórmula (a = pi vezes o r).
+            area = 3.14 * raio * raio;
+            Console.WriteLine("A área do circulo é : " + area );
+            Console.ReadKey();
+
+        }
+    }
+}
+
+Exrcicio 10
+ 
+          {
+
+            double dolar, cota, reais;
+
+            Console.Write("insira o valor em dolares: ");
+            dolar = double.Parse(Console.ReadLine());
+            Console.Write("insira a cotação do dolar: ");
+            cota = double.Parse(Console.ReadLine());
+
+
+            reais = dolar * cota;
+
+            Console.Write("O valor convertido para reais é: R$ {0}", reais);
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+Exercicio 11
+
+            {
+
+
+            double x, y, total;
+
+            Console.Write("insira o valor de x: ");
+            x = double.Parse(Console.ReadLine());
+            Console.Write("insira o valor de y: ");
+            y = double.Parse(Console.ReadLine());
+
+
+            total = Math.Pow(x, y);
+
+            Console.Write("O resultado é: {0}", total);
+
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
+
+Exercicio 12
+
+              {
+            double prod1, prod2, prod3, prod4, prod5, soma, troco, pagamento;
+
+            // entrando com o valor dos produtos
+            Console.Write("insira o valor do produto 1: ");
+            prod1 = double.Parse(Console.ReadLine());
+            Console.Write("insira o valor do produto 2: ");
+            prod2 = double.Parse(Console.ReadLine());
+            Console.Write("insira o valor do produto 3: ");
+            prod3 = double.Parse(Console.ReadLine());
+            Console.Write("insira o valor do produto 4: ");
+            prod4  = double.Parse(Console.ReadLine());
+            Console.Write("insira o valor do produto 5: ");
+            prod5  = double.Parse(Console.ReadLine());
+
+            // calculando o valor da ompra
+            soma = prod1 + prod2 + prod3 + prod4 + prod5;
+            Console.WriteLine("O valor total da compra é {0}  \n", soma);
+
+            // pedindo o valor pago pelo cliente
+            Console.Write("insira o valor recebido: R$");
+            pagamento = double.Parse(Console.ReadLine());
+
+            // calculando e exibindo o troco
+            troco = pagamento - soma;
+
+            Console.Write(" Troco: R$ {0}", troco);
+
+            Console.ReadKey();
+
+        }
+    }
+}
